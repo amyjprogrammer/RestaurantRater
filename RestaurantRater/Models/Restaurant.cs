@@ -16,6 +16,8 @@ namespace RestaurantRater.Models
 
         [DisplayName("Location")]
         public string Address { get; set; }
+
+        [Range(1, 10)]
         public int Rating { get; set; }
     }
 }
